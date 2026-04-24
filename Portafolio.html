@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Yulissa</title>
+    <link rel="stylesheet" href="css/style.css.css">
+</head>
+<body>
+
+<!-- MENÚ -->
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#about">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+    <div class="hero-container">
+
+        <div class="hero-text">
+            <h1>
+                Yulissa Anahi <br>
+                Saldaña Rangel
+            </h1>
+            <p>Diseño gráfico | Branding | Fotografía</p>
+        </div>
+
+       
+
+    </div>
+</section>
+
+<!-- SOBRE MI -->
+<section id="about">
+    <h2>Sobre mí</h2>
+    <p>
+        Soy diseñadora con interés en branding y fotografía. 
+        Me caracterizo por ser creativa, empática y comprometida 
+        con cada proyecto, buscando desarrollar propuestas visuales 
+        que transmitan identidad y conecten con las personas.
+    </p>
+</section>
+
+<!-- HABILIDADES -->
+<section class="habilidades">
+    <div class="habilidades-container">
+        <h2>Mis habilidades</h2>
+
+        <ul>
+            <li>Creación de logotipos</li>
+            <li>Branding y conceptualización de marca</li>
+            <li>Edición y retoque fotográfico</li>
+            <li>Dirección de fotografía básica</li>
+            <li>Manejo de Adobe Illustrator</li>
+            <li>Manejo de Adobe Photoshop</li>
+            <li>Manejo de Adobe Lightroom</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+    <h2>Mis Proyectos</h2>
+
+    <div class="project-container">
+
+        <a href="#branding" class="project-card">
+            <h3>Branding</h3>
+            <p>JP Sublim</p>
+            <p>Atrias</p>
+        </a>
+
+        <a href="#fotografia-social" class="project-card">
+            <h3>Fotografía Social</h3>
+            <p>Eventos y sesiones</p>
+        </a>
+
+        <a href="#fotografia-publicitaria" class="project-card">
+            <h3>Fotografía Publicitaria</h3>
+            <p>Productos</p>
+        </a>
+
+    </div>
+</section>
+
+<!-- BRANDING -->
+<section id="branding">
+    <h2>Branding</h2>
+
+    <div class="branding-project">
+        <h3>JP Sublim</h3>
+        <img src="img/portafolio-05.png" alt="Proyecto JP Sublim">
+    </div>
+
+    <div class="branding-project">
+        <h3>Atrias</h3>
+        <img src="img/portafolio-06.png" alt="Proyecto Atrias">
+    </div>
+</section>
+
+<!-- FOTOGRAFÍA SOCIAL -->
+<section id="fotografia-social" class="fotografia">
+    <h2>Fotografía Social</h2>
+
+    <div class="galeria-fotos">
+        <div class="foto grande">
+            <img src="img/IMG_9259.jpg" onclick="abrirImagen(this.src)">
+        </div>
+
+        <div class="foto">
+            <img src="img/IMG_9267.jpg" onclick="abrirImagen(this.src)">
+        </div>
+
+        <div class="foto">
+            <img src="img/IMG_9274.jpg" onclick="abrirImagen(this.src)">
+        </div>
+
+        <div class="foto">
+            <img src="img/IMG_9285.jpg" onclick="abrirImagen(this.src)">
+        </div>
+
+        <div class="foto">
+            <img src="img/IMG_9439.jpg" onclick="abrirImagen(this.src)">
+        </div>
+
+        <div class="foto">
+            <img src="img/IMG_9440.jpg" onclick="abrirImagen(this.src)">
+        </div>
+
+        <div class="foto">
+            <img src="img/IMG_9468.jpg" onclick="abrirImagen(this.src)">
+        </div>
+    </div>
+</section>
+
+<!-- FOTOGRAFÍA PUBLICITARIA -->
+<section id="fotografia-publicitaria" class="publicitaria">
+    <h2>Fotografía Publicitaria</h2>
+
+    <div class="galeria-publicitaria">
+
+        <div class="card-publicitaria grande">
+            <img src="img/IMG_8183.jpg" onclick="abrirImagen(this.src)">
+        </div>
+
+        <div class="card-publicitaria">
+            <img src="img/IMG_8346.jpg" onclick="abrirImagen(this.src)">
+        </div>
+
+        <div class="card-publicitaria vertical">
+            <img src="img/Agregar un subtítulo.jpg" class="foto-vertical" onclick="abrirImagen(this.src)">
+        </div>
+
+        <div class="card-publicitaria vertical">
+            <img src="img/IMG_8533.jpg" class="foto-vertical" onclick="abrirImagen(this.src)">
+        </div>
+
+        <div class="card-publicitaria vertical">
+            <img src="img/IMG_8559.jpg" class="foto-vertical" onclick="abrirImagen(this.src)">
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+    <h2>Contáctame</h2>
+    <p>¿Tienes un proyecto en mente? Hablemos.</p>
+
+    <form id="contact-form">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="message" placeholder="Escribe tu mensaje" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <p id="mensaje-enviado"></p>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="cerrarImagen()">
+    <img id="imagenGrande">
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Yulissa Anahi Saldaña Rangel | Diseño & Fotografía</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function abrirImagen(src){
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("imagenGrande").src = src;
+}
+
+function cerrarImagen(){
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>
