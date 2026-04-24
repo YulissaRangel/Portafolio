@@ -1,0 +1,57 @@
+/* About-me - Begin */
+.title-main {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    color: #6d3aa8;
+}
+
+.title-secondary {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-style: normal;
+    color: #734ca7;
+}
+
+.title-section {
+  font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: normal;
+    color:#734ca7;  
+}
+
+aside {
+    background-color: #cabcfa;
+    height: 100%;
+    padding-left:10%;
+}
+
+.photo-profile  {
+    width: 200px;   
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    float: left;
+    margin: 0 auto;
+}
+.regresar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #7b4fa3, #9b6cd1);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.regresar:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    background: linear-gradient(135deg, #9b6cd1, #c79fff);
+}
